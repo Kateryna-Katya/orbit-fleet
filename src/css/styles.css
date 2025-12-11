@@ -805,3 +805,100 @@ body.menu-open .header__logo {
     padding: 8px 16px;
     font-size: 12px;
 }
+/* =========================================
+   10. LEGAL PAGES STYLING
+   ========================================= */
+
+.pages {
+    /* Фоновый цвет наследуется от body (оранжевый), 
+       но мы добавим отступ снизу */
+    padding-bottom: 80px;
+}
+
+/* Контейнер "Документа" */
+.legal-content {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    padding: 40px 20px;
+    /* Эффект тени для объема */
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 0 auto;
+    /* Центрируем документ */
+}
+
+@media (min-width: 768px) {
+    .legal-content {
+        padding: 60px 80px;
+    }
+}
+
+/* Типографика внутри документа */
+.legal-content h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color-black);
+    line-height: 1.1;
+}
+
+.legal-content h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.legal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.legal-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.legal-content ul li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Кастомные маркеры списка (Квадратики) */
+.legal-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-bg);
+    /* Оранжевый акцент */
+    border: 1px solid var(--color-black);
+}
+
+.legal-content strong {
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.legal-content a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    color: var(--color-black);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.legal-content a:hover {
+    color: var(--color-bg);
+    /* Оранжевый при наведении */
+    text-decoration-color: var(--color-bg);
+}
