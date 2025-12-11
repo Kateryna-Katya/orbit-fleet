@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/orbit-fleet/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/orbit-fleet/assets/styles-CWYzWvSp.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      Orbit<span class="header__logo-accent">-Fleet</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Практика AI</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline">Связаться</a>
+<button class="header__burger" aria-label="Menu">
+  <span></span>
+  <span></span>
+</button>
+    </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -38,20 +42,58 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container container">
+    <div class="footer__col">
+      <a href="/" class="footer__logo">Orbit-Fleet</a>
+      <p class="footer__desc">
+        Технологии нового поколения для обычных людей.
+        Оцените перспективы проекта и откройте новые возможности.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li><a href="#platform" class="footer__link">О платформе</a></li>
+        <li><a href="#innovations" class="footer__link">Технологии</a></li>
+        <li><a href="#blog" class="footer__link">Блог</a></li>
+        <li><a href="#contact" class="footer__link">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Правовая информация</h3>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookies Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+        <li><a href="return.html" class="footer__link">Return Policy</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>14 Rue de la République, 69002 Lyon, France</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+33189562345">+33 1 89 56 23 45</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:team@orbit-fleet.blog">team@orbit-fleet.blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Orbit-Fleet. Все права защищены. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
-
   </body>
 </html>

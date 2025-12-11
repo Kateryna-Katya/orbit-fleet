@@ -1,56 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/orbit-fleet/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit-Fleet | AI для реальных задач</title>
+  <meta name="description"
+    content="Практическое применение искусственного интеллекта для повседневной жизни. Технологии, которые работают на вас.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+<link rel="icon"
+  href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjRkY0RDAwIi8+PHBhdGggZD0iTTUwIDI1IEw1OCA0MiBMNzUgNTAgTDU4IDU4IEw1MCA3NSBMNDIgNTggTDI1IDUwIEw0MiA0MiBaIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+"
+  type="image/svg+xml">
+    
     <script type="module" crossorigin src="/orbit-fleet/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/orbit-fleet/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/orbit-fleet/assets/styles-CWYzWvSp.css">
   </head>
-  <body>
+  <body class="page">
+    <div class="noise-overlay"></div>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="/" class="header__logo">
+      Orbit<span class="header__logo-accent">-Fleet</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Практика AI</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline">Связаться</a>
+<button class="header__burger" aria-label="Menu">
+  <span></span>
+  <span></span>
+</button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="main-content">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero section-padding">
+    <div class="container hero__container">
+        <div class="hero__top">
+            <span class="hero__label">[ System Status: Online ]</span>
+            <span class="hero__label">Loc: France / Global</span>
+        </div>
+
+        <h1 class="hero__title reveal-type">
+            AI ДЛЯ<br>
+            ОБЫЧНЫХ<br>
+            ЛЮДЕЙ
+        </h1>
+
+        <div class="hero__bottom">
+            <p class="hero__desc">
+                Практики применения ИИ в повседневных задачах.
+                Технологии, которые работают на вас, а не наоборот.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="platform" class="platform section-padding">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Платформа</h2>
+        </div>
+
+        <div class="platform__grid">
+            <div class="p-card">
+                <div class="p-card__icon"><i data-lucide="cpu"></i></div>
+                <h3 class="p-card__title">Технология нового поколения</h3>
+                <p class="p-card__text">Инновационная инфраструктура, позволяющая внедрять AI без кода и сложных
+                    настроек.</p>
+            </div>
+            <div class="p-card">
+                <div class="p-card__icon"><i data-lucide="zap"></i></div>
+                <h3 class="p-card__title">Быстрый старт</h3>
+                <p class="p-card__text">Подключение занимает 2 минуты. Пошаговый путь, понятный каждому пользователю.
+                </p>
+            </div>
+            <div class="p-card">
+                <div class="p-card__icon"><i data-lucide="globe"></i></div>
+                <h3 class="p-card__title">Доступ в Европе</h3>
+                <p class="p-card__text">Платформа уже доступна во Франции и Германии. Полная локализация данных.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovations" class="innovations section-padding bg-black">
+    <div class="container">
+        <div class="section-header text-white">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Инновации</h2>
+        </div>
+
+        <div class="inn__list">
+            <div class="inn__item">
+                <span class="inn__num">/01</span>
+                <h3 class="inn__heading">Генеративные модели</h3>
+                <p class="inn__desc">Создавайте контент, код и стратегии с помощью передовых алгоритмов.</p>
+            </div>
+            <div class="inn__item">
+                <span class="inn__num">/02</span>
+                <h3 class="inn__heading">Автоматизация</h3>
+                <p class="inn__desc">Делегируйте рутину. Умные боты берут на себя 80% повторяющихся задач.</p>
+            </div>
+            <div class="inn__item">
+                <span class="inn__num">/03</span>
+                <h3 class="inn__heading">Аналитика данных</h3>
+                <p class="inn__desc">Принимайте решения на основе фактов. Глубокий анализ в реальном времени.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="blog section-padding">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Практика</h2>
+        </div>
+
+        <div class="blog__wrapper">
+            <article class="b-card">
+                <div class="b-card__date">25.10.2025</div>
+                <h3 class="b-card__title">Как построить карьеру с AI</h3>
+                <p class="b-card__excerpt">Стратегия роста на базе инноваций для фрилансеров и наемных сотрудников.</p>
+                <a href="#" class="b-card__link">Читать далее →</a>
+            </article>
+
+            <article class="b-card">
+                <div class="b-card__date">20.10.2025</div>
+                <h3 class="b-card__title">Пассивный доход</h3>
+                <p class="b-card__excerpt">Реальные кейсы использования нейросетей для генерации дополнительного
+                    заработка.</p>
+                <a href="#" class="b-card__link">Читать далее →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact section-padding">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <h2 class="contact__title">Начните<br>сейчас</h2>
+            <p class="contact__desc">
+                Заполните форму, чтобы получить доступ к платформе.
+                Предложение активно только в странах ЕС.
+            </p>
+            <ul class="contact__details">
+                <li>team@orbit-fleet.blog</li>
+                <li>+33 1 89 56 23 45</li>
+            </ul>
+        </div>
+
+        <form class="form" id="mainForm">
+            <div class="form__group">
+                <label for="name" class="form__label">Имя</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required>
+            </div>
+
+            <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="support@node-onix.today"
+                    required>
+            </div>
+
+            <div class="form__group">
+                <label for="phone" class="form__label">Телефон</label>
+                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+33..." required
+                    pattern="[0-9+ ]*">
+            </div>
+
+            <div class="form__group captcha-group">
+                <label for="captcha" class="form__label">Решите пример: <span id="captcha-math"></span></label>
+                <input type="number" id="captcha" class="form__input" required>
+            </div>
+
+            <div class="form__checkbox-wrapper">
+                <input type="checkbox" id="policy" required>
+                <label for="policy">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                        данных</a></label>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__btn">Отправить заявку</button>
+
+            <div class="form__message" id="formMessage"></div>
+        </form>
+    </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="footer__container container">
+    <div class="footer__col">
+      <a href="/" class="footer__logo">Orbit-Fleet</a>
+      <p class="footer__desc">
+        Технологии нового поколения для обычных людей.
+        Оцените перспективы проекта и откройте новые возможности.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li><a href="#platform" class="footer__link">О платформе</a></li>
+        <li><a href="#innovations" class="footer__link">Технологии</a></li>
+        <li><a href="#blog" class="footer__link">Блог</a></li>
+        <li><a href="#contact" class="footer__link">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Правовая информация</h3>
+      <ul class="footer__list">
+        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+        <li><a href="cookies.html" class="footer__link">Cookies Policy</a></li>
+        <li><a href="terms.html" class="footer__link">Terms of Use</a></li>
+        <li><a href="return.html" class="footer__link">Return Policy</a></li>
+        <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+        <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>14 Rue de la République, 69002 Lyon, France</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+33189562345">+33 1 89 56 23 45</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:team@orbit-fleet.blog">team@orbit-fleet.blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Orbit-Fleet. Все права защищены. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookiePopup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+          политике</a>.</p>
+      <button id="acceptCookies" class="btn btn--primary btn--small">Принять</button>
+    </div>
+<script src="https://unpkg.com/lucide@latest"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+<script src="https://unpkg.com/split-type"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
